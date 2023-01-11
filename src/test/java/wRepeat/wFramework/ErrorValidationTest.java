@@ -34,7 +34,7 @@ public class ErrorValidationTest extends BaseTest {
 		 
 		lp.LoginApplication("poornima@gmail.com","Poor*123");
 		String errorMessage = lp.wrongCred();
-		Assert.assertEquals(errorMessage, "Incorrect email  password.");
+		Assert.assertEquals(errorMessage, "Incorrect email or password.");
 		}
 
 	    
