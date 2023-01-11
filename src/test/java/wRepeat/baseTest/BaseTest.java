@@ -49,8 +49,9 @@ public class BaseTest {
 
 		if (System.getProperty("browser") != null) {
 			browserName = System.getProperty("browser");
+			
 		} else if (System.getProperty("browser") == null){
-			browserName = prop.getProperty("browser");
+			browserName = prop.getProperty("browsername");
 		}
 
 		if (browserName.contains("chrome")) {
