@@ -51,7 +51,7 @@ public class SubmitOrderTest extends BaseTest {
 	    @DataProvider
 	    public Object[][] getData() throws IOException
 	    {
-	    List<HashMap<String,String>> data=jsonToMap(System.getProperty("user.dir")+"src\\test\\java\\wRepeat\\json\\data\\inputdata.json");		
+	    List<HashMap<String,String>> data=jsonToMap(System.getProperty("user.dir")+"\\src\\test\\java\\wRepeat\\json\\data\\inputdata.json");		
 	    return new Object[][]{{data.get(0)},{data.get(1)}};
 	    }
 	    

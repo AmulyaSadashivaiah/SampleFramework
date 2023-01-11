@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SubmitOrder Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jan 11 11:01:01 IST 2023</td>
+<td>Started on:</td><td>Wed Jan 11 11:35:12 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (58 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54403 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,56 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='wRepeat.wFramework.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: wRepeat.wFramework.SubmitOrderTest</td>
-<td><div><pre>java.lang.RuntimeException: java.io.FileNotFoundException: File &apos;C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json&apos; does not exist
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.io.FileNotFoundException: File &apos;C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json&apos; does not exist
-	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:297)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1805)
-	at wRepeat.baseTest.BaseTest.jsonToMap(BaseTest.java:95)
-	at wRepeat.wFramework.SubmitOrderTest.getData(SubmitOrderTest.java:54)
-	... 19 more
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1569650552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1569650552'><pre>java.lang.RuntimeException: java.io.FileNotFoundException: File &apos;C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json&apos; does not exist
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.io.FileNotFoundException: File &apos;C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json&apos; does not exist
-	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:297)
-	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1805)
-	at wRepeat.baseTest.BaseTest.jsonToMap(BaseTest.java:95)
-	at wRepeat.wFramework.SubmitOrderTest.getData(SubmitOrderTest.java:54)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-	... 19 more
-</pre></div></td>
-<td>0</td>
+<td title='wRepeat.wFramework.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: wRepeat.wFramework.SubmitOrderTest<br>Parameters: {password=Poornima*123, product=ZARA COAT 3, email=poornima@gmail.com}</td>
+<td></td>
+<td>5</td>
+<td>wRepeat.wFramework.SubmitOrderTest@54e7df6a</td></tr>
+<tr>
+<td title='wRepeat.wFramework.SubmitOrderTest.submitOrder()'><b>submitOrder</b><br>Test class: wRepeat.wFramework.SubmitOrderTest<br>Parameters: {password=Poornima*123, product=ADIDAS ORIGINAL, email=pushpa@gmail.com}</td>
+<td></td>
+<td>4</td>
+<td>wRepeat.wFramework.SubmitOrderTest@54e7df6a</td></tr>
+<tr>
+<td title='wRepeat.wFramework.SubmitOrderTest.orderHistory()'><b>orderHistory</b><br>Test class: wRepeat.wFramework.SubmitOrderTest</td>
+<td></td>
+<td>1</td>
 <td>wRepeat.wFramework.SubmitOrderTest@54e7df6a</td></tr>
 </table><p>
 </body>

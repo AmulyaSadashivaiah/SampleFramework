@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="wRepeat.wFramework.SubmitOrderTest">
+      <class name="wRepeat.wFramework.ErrorValidationTest">
         <methods>
+          <include name="init"/>
           <include name="tearDown"/>
-          <include name="submitOrder"/>
-          <include name="orderHistory"/>
           <include name="LaunchApplication"/>
         </methods>
-      </class> <!-- wRepeat.wFramework.SubmitOrderTest -->
+      </class> <!-- wRepeat.wFramework.ErrorValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

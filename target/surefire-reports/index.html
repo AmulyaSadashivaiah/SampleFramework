@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,  2 skipped,  1 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -120,11 +120,6 @@
                         <a href="#" panel-name="suite-Suite" title="wRepeat.wFramework.ErrorValidationTest" class="method navigator-link" hash-for-method="init">init</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="wRepeat.wFramework.ErrorValidationTest" class="method navigator-link" hash-for-method="init">init</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
@@ -136,7 +131,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="wRepeat.wFramework.SubmitOrderTest" class="method navigator-link" hash-for-method="orderHistory">orderHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="wRepeat.wFramework.ErrorValidationTest" class="method navigator-link" hash-for-method="orderHistory">orderHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="wRepeat.wFramework.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=Poornima*123, product=ZARA COAT 3, email=poornima@gmail.com})">submitOrder({password=Poornima*123, product=ZARA COAT 3, email=poornima@gmail.com})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="wRepeat.wFramework.SubmitOrderTest" class="method navigator-link" hash-for-method="submitOrder({password=Poornima*123, product=ADIDAS ORIGINAL, email=pushpa@gmail.com})">submitOrder({password=Poornima*123, product=ADIDAS ORIGINAL, email=pushpa@gmail.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -165,11 +175,7 @@
                   <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email  password.] but found [Incorrect email or password.]
 	at wRepeat.wFramework.ErrorValidationTest.init(ErrorValidationTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -186,35 +192,46 @@
                   <a name="init">
                   </a> <!-- init -->
                   <span class="method-name">init</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email  password.] but found []
+                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email  password.] but found [Incorrect email or password.]
 	at wRepeat.wFramework.ErrorValidationTest.init(ErrorValidationTest.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="init">
-                  </a> <!-- init -->
-                  <span class="method-name">init</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email  password.] but found []
-	at wRepeat.wFramework.ErrorValidationTest.init(ErrorValidationTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">wRepeat.wFramework.SubmitOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="orderHistory">
+                  </a> <!-- orderHistory -->
+                  <span class="method-name">orderHistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=Poornima*123, product=ZARA COAT 3, email=poornima@gmail.com})">
+                  </a> <!-- submitOrder({password=Poornima*123, product=ZARA COAT 3, email=poornima@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Poornima*123, product=ZARA COAT 3, email=poornima@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder({password=Poornima*123, product=ADIDAS ORIGINAL, email=pushpa@gmail.com})">
+                  </a> <!-- submitOrder({password=Poornima*123, product=ADIDAS ORIGINAL, email=pushpa@gmail.com}) -->
+                  <span class="method-name">submitOrder</span>
+                  <span class="parameters">({password=Poornima*123, product=ADIDAS ORIGINAL, email=pushpa@gmail.com})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -239,16 +256,16 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;wRepeat.baseTest.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;SubmitOrder Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SubmitOrder Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;wRepeat.wFramework.SubmitOrderTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SubmitOrder Test --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;ErrorValidation Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ErrorValidation Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;wRepeat.wFramework.ErrorValidationTest&quot;/&gt;
     &lt;/classes&gt;
@@ -285,6 +302,14 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Purchase</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">submitOrder</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -301,28 +326,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'orderHistory')
-data.setCell(0, 2, 'wRepeat.wFramework.ErrorValidationTest')
-data.setCell(0, 3, 4070);
+data.setCell(0, 1, 'submitOrder')
+data.setCell(0, 2, 'wRepeat.wFramework.SubmitOrderTest')
+data.setCell(0, 3, 5060);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'init')
-data.setCell(1, 2, 'wRepeat.wFramework.ErrorValidationTest')
-data.setCell(1, 3, 665);
+data.setCell(1, 1, 'submitOrder')
+data.setCell(1, 2, 'wRepeat.wFramework.SubmitOrderTest')
+data.setCell(1, 3, 4977);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'init')
+data.setCell(2, 1, 'orderHistory')
 data.setCell(2, 2, 'wRepeat.wFramework.ErrorValidationTest')
-data.setCell(2, 3, 611);
+data.setCell(2, 3, 4177);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'init')
-data.setCell(3, 2, 'wRepeat.wFramework.ErrorValidationTest')
-data.setCell(3, 3, 541);
+data.setCell(3, 1, 'orderHistory')
+data.setCell(3, 2, 'wRepeat.wFramework.SubmitOrderTest')
+data.setCell(3, 3, 1026);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'init')
+data.setCell(4, 2, 'wRepeat.wFramework.ErrorValidationTest')
+data.setCell(4, 3, 593);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'init')
+data.setCell(5, 2, 'wRepeat.wFramework.ErrorValidationTest')
+data.setCell(5, 3, 529);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -348,56 +381,83 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">wRepeat.wFramework.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">wRepeat.wFramework.SubmitOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">init</span>
-                <span class="method-start">4930 ms</span>
+                <span class="method-name">submitOrder({password=Poornima*123, product=ZARA COAT 3, email=poornima@gmail.com})</span>
+                <span class="method-start">5252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5474 ms</span>
+                <span class="method-start">10319 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApplication</span>
-                <span class="method-start">5633 ms</span>
+                <span class="method-start">26596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitOrder({password=Poornima*123, product=ADIDAS ORIGINAL, email=pushpa@gmail.com})</span>
+                <span class="method-start">29516 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">34494 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApplication</span>
+                <span class="method-start">34815 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">orderHistory</span>
+                <span class="method-start">36810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">37837 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">wRepeat.wFramework.ErrorValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApplication</span>
+                <span class="method-start">54503 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">init</span>
-                <span class="method-start">7539 ms</span>
+                <span class="method-start">57362 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8204 ms</span>
+                <span class="method-start">57891 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApplication</span>
-                <span class="method-start">8316 ms</span>
+                <span class="method-start">58010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">init</span>
-                <span class="method-start">11629 ms</span>
+                <span class="method-start">61239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12991 ms</span>
+                <span class="method-start">62499 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApplication</span>
-                <span class="method-start">29268 ms</span>
+                <span class="method-start">62740 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">orderHistory</span>
-                <span class="method-start">32080 ms</span>
+                <span class="method-start">64658 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36152 ms</span>
+                <span class="method-start">68837 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
