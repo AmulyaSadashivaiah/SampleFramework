@@ -48,7 +48,7 @@ public class BaseTest {
 	
   String browserName=System.getProperty("browser")!= null ? System.getProperty("browser") : prop.getProperty("browser");
      
-    if(browserName.equalsIgnoreCase("chrome"))
+    if(browserName.contains("chrome"))
     {   ChromeOptions opt = new ChromeOptions();
         if(browserName.contains("headless"))
         {
@@ -57,7 +57,7 @@ public class BaseTest {
     	WebDriverManager.chromedriver().setup();
     	driver = new ChromeDriver(opt);
     }
-    else if(browserName.equalsIgnoreCase("msedge"))
+    else if(browserName.contains("msedge"))
     {
     	EdgeOptions opt = new EdgeOptions();
     	if(browserName.contains("headless"))
@@ -67,7 +67,7 @@ public class BaseTest {
     	WebDriverManager.edgedriver().setup();
     	driver = new EdgeDriver(opt);
     }
-    else if(browserName.equalsIgnoreCase("firefox"))
+    else if(browserName.contains("firefox"))
     {
     	FirefoxOptions opt = new FirefoxOptions();
     	if(browserName.contains("headless"))

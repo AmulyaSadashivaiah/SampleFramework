@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="wRepeat.baseTest.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="ErrorValidation Test(failed)">
+  <test thread-count="5" parallel="tests" name="SubmitOrder Test(failed)">
     <classes>
-      <class name="wRepeat.wFramework.ErrorValidationTest">
+      <class name="wRepeat.wFramework.SubmitOrderTest">
         <methods>
-          <include name="init"/>
           <include name="tearDown"/>
+          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="orderHistory"/>
           <include name="LaunchApplication"/>
         </methods>
-      </class> <!-- wRepeat.wFramework.ErrorValidationTest -->
+      </class> <!-- wRepeat.wFramework.SubmitOrderTest -->
     </classes>
-  </test> <!-- ErrorValidation Test(failed) -->
+  </test> <!-- SubmitOrder Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

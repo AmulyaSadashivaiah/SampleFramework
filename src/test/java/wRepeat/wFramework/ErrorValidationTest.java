@@ -46,7 +46,7 @@ public class ErrorValidationTest extends BaseTest {
 			cp.goToCart();
 			Boolean match=cp.cartPage(product);
 			Assert.assertTrue(true);
-			System.out.println(match);
+			
 	    
 	    }
 	    
