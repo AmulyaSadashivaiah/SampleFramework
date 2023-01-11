@@ -45,11 +45,11 @@ public class BaseTest {
 		Properties prop = new Properties();
 		prop.load(fis);
 
-		String browserName;
+		String browserName = null;
 
 		if (System.getProperty("browser") != null) {
 			browserName = System.getProperty("browser");
-		} else {
+		} else if (System.getProperty("browser") == null){
 			browserName = prop.getProperty("browser");
 		}
 
