@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 26.927 s <<< FAILURE! - in TestSuite
+init(wRepeat.wFramework.ErrorValidationTest)  Time elapsed: 0.579 s  <<< FAILURE!
+java.lang.AssertionError: expected [Incorrect email  password.] but found [Incorrect email or password.]
+	at wRepeat.wFramework.ErrorValidationTest.init(ErrorValidationTest.java:37)
+
+submitOrder(wRepeat.wFramework.SubmitOrderTest)  Time elapsed: 5.065 s  <<< FAILURE!
+java.lang.RuntimeException: java.io.FileNotFoundException: File 'C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json' does not exist
+	at wRepeat.wFramework.SubmitOrderTest.getData(SubmitOrderTest.java:54)
+
