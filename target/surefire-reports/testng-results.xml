@@ -1,127 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="6" passed="1" failed="2" skipped="1">
+<testng-results retried="2" ignored="0" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-10T22:20:26 IST" name="Surefire suite" finished-at="2023-01-10T22:20:52 IST" duration-ms="25955">
+  <suite started-at="2023-01-11T11:01:01 IST" name="Suite" finished-at="2023-01-11T11:01:37 IST" duration-ms="36383">
     <groups>
       <group name="ErrorHandling">
-        <method signature="ErrorValidationTest.init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" name="init" class="wRepeat.wFramework.ErrorValidationTest"/>
+        <method signature="ErrorValidationTest.init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" name="init" class="wRepeat.wFramework.ErrorValidationTest"/>
       </group> <!-- ErrorHandling -->
       <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:wRepeat.wFramework.SubmitOrderTest@a2431d0]" name="submitOrder" class="wRepeat.wFramework.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:wRepeat.wFramework.SubmitOrderTest@54e7df6a]" name="submitOrder" class="wRepeat.wFramework.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2023-01-10T22:20:26 IST" name="Surefire test" finished-at="2023-01-10T22:20:52 IST" duration-ms="25955">
-      <class name="wRepeat.wFramework.SubmitOrderTest">
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:wRepeat.wFramework.SubmitOrderTest@a2431d0]" started-at="2023-01-10T22:20:52 IST" name="submitOrder" data-provider="getData" finished-at="2023-01-10T22:20:52 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.io.FileNotFoundException: File 'C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json' does not exist]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: File 'C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json' does not exist
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:57)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:157)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:803)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.io.FileNotFoundException: File 'C:\Users\bsamu\EclipseWorkspace\WFrameworksrc\test\java\wRepeat\json\data\inputdata.json' does not exist
-at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:297)
-at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1805)
-at wRepeat.baseTest.BaseTest.jsonToMap(BaseTest.java:97)
-at wRepeat.wFramework.SubmitOrderTest.getData(SubmitOrderTest.java:54)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:53)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method signature="orderHistory()[pri:0, instance:wRepeat.wFramework.SubmitOrderTest@a2431d0]" started-at="2023-01-10T22:20:52 IST" name="orderHistory" finished-at="2023-01-10T22:20:52 IST" depends-on-methods="wRepeat.wFramework.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method wRepeat.wFramework.SubmitOrderTest.orderHistory() on instance wRepeat.wFramework.SubmitOrderTest@a2431d0 depends on not successfully finished methods 
-[wRepeat.wFramework.SubmitOrderTest.submitOrder() on instance wRepeat.wFramework.SubmitOrderTest@a2431d0]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method wRepeat.wFramework.SubmitOrderTest.orderHistory() on instance wRepeat.wFramework.SubmitOrderTest@a2431d0 depends on not successfully finished methods 
-[wRepeat.wFramework.SubmitOrderTest.submitOrder() on instance wRepeat.wFramework.SubmitOrderTest@a2431d0]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderHistory -->
-      </class> <!-- wRepeat.wFramework.SubmitOrderTest -->
+    <test started-at="2023-01-11T11:01:01 IST" name="ErrorValidation Test" finished-at="2023-01-11T11:01:37 IST" duration-ms="36383">
       <class name="wRepeat.wFramework.ErrorValidationTest">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:26 IST" name="LaunchApplication" finished-at="2023-01-10T22:20:32 IST" duration-ms="5393" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:01 IST" name="LaunchApplication" finished-at="2023-01-11T11:01:06 IST" duration-ms="4924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method retried="true" signature="init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:32 IST" name="init" finished-at="2023-01-10T22:20:32 IST" duration-ms="534" status="SKIP">
+        <test-method retried="true" signature="init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:06 IST" name="init" finished-at="2023-01-11T11:01:06 IST" duration-ms="541" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Incorrect email  password.] but found [Incorrect email or password.]]]>
+              <![CDATA[expected [Incorrect email  password.] but found []]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email  password.] but found [Incorrect email or password.]
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email  password.] but found []
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
@@ -145,38 +47,77 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:32 IST" name="tearDown" finished-at="2023-01-10T22:20:32 IST" duration-ms="158" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:06 IST" name="tearDown" finished-at="2023-01-11T11:01:06 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:32 IST" name="LaunchApplication" finished-at="2023-01-10T22:20:36 IST" duration-ms="3585" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:06 IST" name="LaunchApplication" finished-at="2023-01-11T11:01:08 IST" duration-ms="1906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method retried="true" signature="init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:36 IST" name="init" finished-at="2023-01-10T22:20:37 IST" duration-ms="606" status="SKIP">
+        <test-method retried="true" signature="init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:08 IST" name="init" finished-at="2023-01-11T11:01:09 IST" duration-ms="665" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email  password.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email  password.] but found []
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at wRepeat.wFramework.ErrorValidationTest.init(ErrorValidationTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:09 IST" name="tearDown" finished-at="2023-01-11T11:01:09 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:09 IST" name="LaunchApplication" finished-at="2023-01-11T11:01:12 IST" duration-ms="3313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:12 IST" name="init" finished-at="2023-01-11T11:01:13 IST" duration-ms="611" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Incorrect email  password.] but found [Incorrect email or password.]]]>
@@ -206,107 +147,35 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:829)
 at org.testng.TestRunner.run(TestRunner.java:602)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:37 IST" name="tearDown" finished-at="2023-01-10T22:20:37 IST" duration-ms="368" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:14 IST" name="tearDown" finished-at="2023-01-11T11:01:30 IST" duration-ms="16274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:37 IST" name="LaunchApplication" finished-at="2023-01-10T22:20:41 IST" duration-ms="4080" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:30 IST" name="LaunchApplication" finished-at="2023-01-11T11:01:33 IST" duration-ms="2812" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="init()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:41 IST" name="init" finished-at="2023-01-10T22:20:42 IST" duration-ms="576" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email  password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email  password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at wRepeat.wFramework.ErrorValidationTest.init(ErrorValidationTest.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:42 IST" name="tearDown" finished-at="2023-01-10T22:20:42 IST" duration-ms="703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:42 IST" name="LaunchApplication" finished-at="2023-01-10T22:20:47 IST" duration-ms="4760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchApplication -->
-        <test-method signature="orderHistory()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:47 IST" name="orderHistory" finished-at="2023-01-10T22:20:52 IST" duration-ms="4481" status="PASS">
+        <test-method signature="orderHistory()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:33 IST" name="orderHistory" finished-at="2023-01-11T11:01:37 IST" duration-ms="4070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderHistory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@693fe6c9]" started-at="2023-01-10T22:20:52 IST" name="tearDown" finished-at="2023-01-10T22:20:52 IST" duration-ms="585" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:wRepeat.wFramework.ErrorValidationTest@53de625d]" started-at="2023-01-11T11:01:37 IST" name="tearDown" finished-at="2023-01-11T11:01:37 IST" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- wRepeat.wFramework.ErrorValidationTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- ErrorValidation Test -->
+  </suite> <!-- Suite -->
 </testng-results>

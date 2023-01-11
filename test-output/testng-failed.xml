@@ -10,7 +10,6 @@
         <methods>
           <include name="init"/>
           <include name="tearDown"/>
-          <include name="orderHistory"/>
           <include name="LaunchApplication"/>
         </methods>
       </class> <!-- wRepeat.wFramework.ErrorValidationTest -->
