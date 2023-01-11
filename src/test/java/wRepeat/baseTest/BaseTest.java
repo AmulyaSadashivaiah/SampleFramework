@@ -46,13 +46,9 @@ public class BaseTest {
 		prop.load(fis);
 
 		String browserName = null;
-
-		if (System.getProperty("browser") != null) {
-			browserName = System.getProperty("browser");
-			
-		} else if (System.getProperty("browser") == null){
-			browserName = prop.getProperty("browsername");
-		}
+        browserName = System.getProperty("browser");
+	//	browserName = prop.getProperty("browsername");
+		
 
 		if (browserName.contains("chrome")) {
 			ChromeOptions opt = new ChromeOptions();
